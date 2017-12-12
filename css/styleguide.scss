@@ -1,0 +1,125 @@
+// this stylesheet overrides some style in main.scss
+// to display it better on this page
+$pink: #ff9787;
+$blue: #00c2e4;
+$black: black;
+$lightblue: #f0fbff;
+$shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+
+section {
+  position: relative;
+  margin: 10% 0;
+}
+
+h3 {
+  color: $pink;
+}
+
+code {
+  word-wrap: break-word;
+}
+
+#styleguide {
+  margin: 5% 5% 5% 10%;
+}
+
+.styleguide-title {
+  padding: 5% 0;
+  margin-bottom: 10%;
+  box-shadow: $shadow;
+}
+
+.block {
+  min-height: 12rem;
+}
+
+.code-block {
+  border: 1px solid lightgrey;
+  margin: 3%;
+  padding: 1rem;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: $lightblue;
+  }
+}
+/* color palette squares */
+/* c/o http://codeitdown.com/css-square-rectangle/ for this code */
+.square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  width: 16%;
+  overflow: hidden;
+  /*margin: 0.5%;*/
+  /*float: left;*/
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: white;
+  font-size: 0.9rem;
+  /*border-radius: 8px;*/
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 10px 30px 2px rgba(0, 0, 0, 0.2);
+}
+
+.square:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.square-content {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  text-shadow: $shadow;
+}
+
+.square-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+#bg-beep {
+  width: 100%;
+}
+//for the sake of showing in the style guide a second id was made
+
+#bg-beep-1 {
+  background-image: url("../img/beep/concept3.png");
+  width: 33%;
+  background-size: 80%;
+
+  &:hover {
+    background-size: 85%;
+    transition: 0.2s linear;
+  }
+}
+
+.sticky-logo {
+  position: absolute;
+  left: 4%;
+  width: 30px;
+  top: 16%;
+  opacity: 0.9;
+}
+//Citations////////////////////////
+#citation {
+  min-height: 100vh;
+  padding: 10% 0 0 10%;
+}

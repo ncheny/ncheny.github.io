@@ -1,0 +1,111 @@
+/* ------------- variables ------------- */
+$pink: #ff9787;
+$blue: #00c2e4;
+$black: black;
+$lightblue: #f0fbff;
+$shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+
+#illustration-header {
+  background-image: url("../img/illustrations/Roundumbrellagirl.jpg");
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // z-index: 1000;
+  display: flex;
+  position: relative;
+}
+
+.proj-row {
+  margin-top: 2%;
+  width: 100%;
+}
+
+[class*="illus-"] {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  transition: 0.2s linear;
+  background-position: center;
+  margin: 1%;
+  background-size: cover;
+  width: 23%;
+  height: 30rem;
+  border: solid 1px lightgrey;
+  transition: 0.6s ease;
+
+  &:hover {
+    box-shadow: $shadow;
+    transition: 0.6s ease;
+  }
+}
+
+.illus-1 {
+  background-image: url("../img/illustrations/12kyoko.jpg");
+}
+
+.illus-2 {
+  background-image: url("../img/illustrations/blknpurp.jpg");
+}
+
+.illus-3 {
+  background-image: url("../img/illustrations/jojo.jpg");
+}
+
+.illus-4 {
+  width: 48%;
+  height: 20rem;
+  background-image: url("../img/illustrations/internalized.png");
+}
+
+.illus-5 {
+  width: 48%;
+  height: 20rem;
+  background-image: url("../img/illustrations/dogtooth.jpg");
+}
+
+.illus-6 {
+  width: 30%;
+  background-image: url("../img/illustrations/cryingboy.jpg");
+}
+
+.illus-7 {
+  width: 30%;
+  background-image: url("../img/illustrations/Roundumbrellagirl.jpg");
+}
+
+.illus-8 {
+  width: 30%;
+  background-image: url("../img/illustrations/n04.jpg");
+}
+
+.illus-9 {
+  background-image: url("../img/illustrations/p3.jpg");
+}
+
+.illus-10 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url("../img/comics/lp1.jpg");
+}
+
+.illus-11 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url("../img/comics/lp2.jpg");
+}
+
+.illus-12 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url("../img/comics/lp3.jpg");
+}
+
+.illus-13 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url("../img/comics/lp4.jpg");
+}

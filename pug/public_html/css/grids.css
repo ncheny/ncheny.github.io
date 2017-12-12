@@ -1,0 +1,116 @@
+/* This is some default styling for the exercise */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.container {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  clear: both;
+  height: auto; }
+
+.container > .block {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-basis: 30em;
+  -ms-flex-preferred-size: 30em;
+  -webkit-flex-basis: 30em;
+  flex-basis: 30em;
+  padding: 0 1rem; }
+
+/* c/o http://www.sketchingwithcss.com/samplechapter/cheatsheet.html */
+.container .row-wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+.container .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+
+.container .center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-line-pack: end;
+  -webkit-align-content: flex-end;
+  align-content: flex-end; }
+
+.container .row {
+  -ms-flex-wrap: row wrap;
+  -webkit-flex-wrap: row wrap;
+  flex-wrap: row wrap; }
+
+.container .col {
+  -ms-flex-wrap: col wrap;
+  -webkit-flex-wrap: col wrap;
+  flex-wrap: col wrap; }
+
+/*screen is smaller than 560px*/
+@media (max-width: 35em) {
+  .left-nav, .right-nav {
+    display: none; }
+  #amorphous-header, #bg-amorphous, #bg-beep, .header-text {
+    width: 100%; }
+  .header-text {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    padding-left: 0;
+    padding: 0 3%; }
+    .header-text .head-1 {
+      padding-top: 10%; }
+  .header-details {
+    padding-top: 10%; }
+  .project-content {
+    padding-left: 0;
+    width: 100%; }
+  #overview {
+    padding: 0 5%; }
+  .footer-personalInfo {
+    width: 100%; }
+  .footer-listing {
+    width: 40%; }
+  .top-link {
+    bottom: 14.25em; } }
+
+/*half-media area resizes earlier at 720px*/
+@media (max-width: 50em) {
+  .half-img, .half-text {
+    width: 100%; }
+  .half-text {
+    margin: 0 4% 4% 0%; }
+  .about-text {
+    padding: 0; }
+  #featured, #about {
+    height: auto; }
+  .featured-description {
+    margin: 25% 0 30% 5%; }
+    .featured-description .head-1 {
+      font-size: 2.5em; }
+  .proj-article {
+    max-width: 100%;
+    height: auto; }
+  iframe {
+    height: 20rem; } }
