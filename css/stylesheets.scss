@@ -3,12 +3,14 @@
 /* We can set up preprocessing to combine files */
 @import "main.scss";
 @import "projects.scss";
-@import "illus.css";
-
 
 // carousel library stylesheets
 @import "../slick/slick.css";
 @import "../slick/slick-theme.css";
+
+
+// import lightgallery stylesheets
+@import "lightgallery.css";
 
 
 // grid control mobile size so always placed last here

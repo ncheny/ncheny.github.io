@@ -10,6 +10,7 @@ console.log( "window width= " + windowWidth + "px" );
 // takes in a css selector, willonly find the first one (querySelectorAll finds all)
 var navDefault = document.querySelector( "#nav-default" );
 var navToggle = document.querySelector( "#nav-toggle" );
+var resume = document.querySelector( "#resume" );
 // var navItems = document.querySelector( "#nav-items" );
 // var navFirstItem = document.querySelector( "#nav-items a" );
 
@@ -20,9 +21,14 @@ if ( windowWidth < 560 ) {
     console.log( "Window width is less than 500px, collapsing menu" );
     // classList expllicitly specify it s aast
     navDefault.classList.add( "hidden" );
-    navToggle.classList.remove( "hidden" );
-    // navItems.classList.add( "hidden" );
+    navToggle.classList.remove( "hidden" );    // navItems.classList.add( "hidden" );
 }
+
+if ( windowWidth < 414 ) {
+  console.log( "Window width is less than 414px, hiding resume nav link" );
+resume.classList.add( "hidden" );
+}
+
 //acccessibility tool support
 navToggle.setAttribute( "aria-hidden", "false" );
 // navItems.setAttribute( "aria-hidden", "true" );
@@ -58,7 +64,12 @@ window.addEventListener( "resize", function() {
         // navItems.classList.add( "hidden" );
         //jumps to first menu item right away(a variable here);
         // navFirstItem.focus();
-    } else {
+    }
+    if ( windowWidth < 414 ) {
+      console.log( "Window width is less than 414px, hiding resume nav link" );
+    resume.classList.add( "hidden" );
+
+    }else {
         // navItems.classList.add( "hidden" );
         navToggle.classList.add( "hidden" );
         navDefault.classList.remove( "hidden" );

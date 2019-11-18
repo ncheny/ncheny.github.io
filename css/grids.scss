@@ -1,4 +1,4 @@
-/* This is some default styling for the exercise */
+/* This is some default styling for containers */
 *,
 *::after,
 *::before {
@@ -51,7 +51,8 @@
   -ms-flex-line-pack: end;
   align-content: flex-end;
 }
-// for styleguide's scenario
+
+// for styleguide's scenario: resize at 400px (very small screen)
 @media (max-width: 25em) {
   #styleguide .sticky-logo {
     position: relative;
@@ -61,8 +62,10 @@
     margin-top: 5%;
   }
 }
+
 /*screen is smaller than 560px*/
 @media (max-width: 35em) {
+
   .left-nav,
   .right-nav {
     display: none;
@@ -129,13 +132,19 @@
     padding-bottom: 2rem;
   }
 
-  .footer-listing {
-    width: 25%;
+  .footer-listings-section {
+    width: 100%;
+    margin: 0 5%;
+    padding-bottom: 2rem;
   }
 
-  .top-link {
-    bottom: 16.25em;
+  .footer-listing {
+    width: 23%;
   }
+
+  // .top-link {
+  //   bottom: 16.25em;
+  // }
 
   .outlinks {
     font-size: 0.8rem;
@@ -168,15 +177,24 @@
   body #citation {
     padding: 20% 0 0 10%;
   }
+
+  .wide-text{
+    width: 100%;
+    max-width: 100%;
+    padding-top:1rem;
+  }
 }
-/*half-media area resizes earlier at 720px*/
+
+
+/*media resizing at 720px*/
 @media (max-width: 50em) {
   .head-1 {
     font-size: 200%;
+    // max-width: auto;
   }
 
   .head-3 {
-    font-size: 80%;
+    font-size: 60%;
   }
 
   .half-img,
@@ -184,12 +202,17 @@
     width: 100%;
   }
 
+  .grids-2 {
+    max-width: 50%;
+    height: auto;
+  }
+
   .grids-3 {
     max-width: 100%;
     height: auto;
   }
 
-  .amorphous-cat-gif {
+  #animation .amorphous-cat-gif {
     max-width: 100%;
   }
 
@@ -229,7 +252,13 @@
   }
 
   #top #beep-header,
+  #top #beep2-header,
+  #top #brg-header,
+  #top #m2m-header,
+  #top #lunular-header,
   #top #illustration-header,
+  #top #cycle-header,  #top #eyexpo-header,
+  #top #evidentp-header,
   .header-project #amorphous-header,
   .header-text {
     width: 100%;
@@ -238,6 +267,9 @@
   #bg-amorphous,
   #bg-beep,
   #bg-illus,
+  #bg-banners,#bg-eyexpo,
+  #bg-evidentp,#bg-brg,
+  #bg-lunular, #bg-m2m,
   #styleguide #bg-beep-1 {
     width: 100%;
     min-height: 10rem;
@@ -245,12 +277,28 @@
 
   #top #amorphous-header,
   #top #beep-header,
-  #top #illustration-header {
-    height: 80vh;
+  #top #beep2-header,
+  #top #lunular-header,
+  #top #brg-header,
+  #top #m2m-header,
+  #top #cycle-header,
+  #top #eyexpo-header,
+  #top #illustration-header,
+  #top #evidentp-header {
+    min-height: 70vh;
+    max-height: 70vh;
+
   }
 
   #amorphous-header:before,
-  #beep-header:before {
+  #beep-header:before,
+  #beep2-header:before,
+  #brg-header:before,
+  #m2m-header:before,
+  #lunular-header:before,
+  #eyexpo-header:before,
+  #evidentp-header:before,
+  #cycle-header:before {
     display: none;
   }
 
@@ -269,7 +317,7 @@
   .header-text {
     order: 2;
     padding: 0 5%;
-
+    margin-bottom: 15%;
     .head-1 {
       padding-top: 10%;
     }
@@ -279,13 +327,47 @@
     padding-top: 5%;
   }
 
-  #illustrations [class*="illus-"] {
+  .img2-block, .img3-block, .img4-block{
     width: 100%;
-    background-size: contain;
+    // background-size: contain;
   }
 
   .scroll-down {
     visibility: hidden;
     display: none;
+  }
+
+  .footer-link{
+  font-size: 0.7rem;
+  }
+
+  .grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width:calc(50% - 2rem);
+  }
+  .step-short{
+    width: 100%;
+  }
+
+  #projects .project-header {
+    margin: 25% 5% 11% 10%;
+        max-width: 25rem;
+        font-size: 250%;
+  }
+}
+
+// changing project row title
+// larger than 800px, less than 1476 px:
+
+@media only screen and (min-width : 800px) and (max-width: 1475px){
+
+#projects .project-header {
+  font-size: 120%;
+    writing-mode: vertical-lr;
+    text-orientation: inherit;
   }
 }

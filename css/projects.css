@@ -10,130 +10,72 @@ iframe {
   height: 100%;
   border: none; }
 
+figure {
+  margin: 0; }
+
+.grids-2 {
+  max-width: 50%;
+  height: 100%;
+  display: block;
+  padding: 1% 1% 0 0; }
+
+.grids-4 {
+  max-width: 25%;
+  height: 100%;
+  display: block; }
+
+.grids-3 {
+  max-width: 33%;
+  height: 100%;
+  display: block;
+  padding: 1% 1% 0 0; }
+
 #top {
   position: relative; }
 
-#amorphous-header {
-  background-image: url(../img/amorphous/preview.png);
+[id*="header"] {
   top: 0;
   left: 0;
   width: 65%;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative; }
+
+#amorphous-header {
+  background-image: url("../img/amorphous/preview.png"); }
 
 #beep-header {
-  background-image: url(../img/beep/preview.jpg);
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 65%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative; }
+  background-image: url("../img/beep/preview.jpg"); }
 
-#illustration-header {
-  background-image: url(../img/illustrations/Roundumbrellagirl.jpg);
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 65%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative; }
+#beep2-header {
+  background-image: url("../img/beep2/beepCover.jpg"); }
 
-[class*="illus-"] {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: block;
-  -webkit-transition: 0.2s linear;
-  -o-transition: 0.2s linear;
-  transition: 0.2s linear;
-  background-position: center;
-  margin: 3% 1%;
-  background-size: cover;
-  width: 23%;
-  height: 30rem;
-  border: solid 1px lightgrey;
-  -webkit-transition: 0.6s ease;
-  -o-transition: 0.6s ease;
-  transition: 0.6s ease; }
-  [class*="illus-"]:hover {
-    -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
-    box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
-    -webkit-transition: 0.6s ease;
-    -o-transition: 0.6s ease;
-    transition: 0.6s ease; }
+#cycle-header {
+  background-image: url("../img/streetbanners/preview.png"); }
 
-.illus-1 {
-  background-image: url(../img/illustrations/12kyoko.jpg); }
+#eyexpo-header {
+  background-image: url("../img/eyexpo/preview.jpg"); }
 
-.illus-2 {
-  background-image: url(../img/illustrations/blknpurp.jpg); }
+#brg-header {
+  background-image: url("../img/brg/BRGoutside.jpg"); }
 
-.illus-3 {
-  background-image: url(../img/illustrations/jojo.jpg); }
+#m2m-header {
+  background-image: url("../img/m2m/m2mBG.jpg"); }
 
-.illus-4 {
-  width: 48%;
-  height: 20rem;
-  background-image: url(../img/illustrations/internalized.png); }
+#evidentp-header {
+  background-image: url("../img/evidentpoint/headerimg.jpg"); }
 
-.illus-5 {
-  width: 48%;
-  height: 20rem;
-  background-image: url(../img/illustrations/dogtooth.jpg); }
+#videop-header {
+  background-image: url("../img/videoproduction/header.png"); }
 
-.illus-6 {
-  width: 30%;
-  background-image: url(../img/illustrations/cryingboy.jpg); }
-
-.illus-7 {
-  width: 30%;
-  background-image: url(../img/illustrations/Roundumbrellagirl.jpg); }
-
-.illus-8 {
-  width: 30%;
-  background-image: url(../img/illustrations/n04.jpg); }
-
-.illus-9 {
-  background-image: url(../img/illustrations/p3.jpg); }
-
-.illus-10 {
-  height: 20rem;
-  background-size: contain;
-  background-image: url(../img/comics/lp1.jpg); }
-
-.illus-11 {
-  height: 20rem;
-  background-size: contain;
-  background-image: url(../img/comics/lp2.jpg); }
-
-.illus-12 {
-  height: 20rem;
-  background-size: contain;
-  background-image: url(../img/comics/lp3.jpg); }
-
-.illus-13 {
-  height: 20rem;
-  background-size: contain;
-  background-image: url(../img/comics/lp4.jpg); }
+#lunular-header {
+  background-color: #ffda5b;
+  background-image: url("../img/lunular/lunularheader.png"); }
 
 .header-text {
   width: 35%;
@@ -148,7 +90,7 @@ iframe {
 
 .header-overview {
   font-size: 0.8rem;
-  margin-bottom: 25%; }
+  margin-bottom: 10%; }
 
 .header-details {
   padding-top: 10%;
@@ -163,13 +105,21 @@ iframe {
   -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
   box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); }
 
+#amorphous-header:before,
 #beep-header:before,
-#amorphous-header:before {
+#beep2-header:before,
+#cycle-header:before,
+#evidentp-header:before,
+#videop-header:before,
+#brg-header:before,
+#m2m-header:before,
+#lunular-header:before,
+#eyexpo-header:before {
   content: "";
   position: absolute;
   top: 0;
   width: 0;
-  height: 100vh;
+  height: 100%;
   border-left: 8vh solid #ffffff;
   border-top: 50vh solid transparent;
   border-bottom: 50vh solid transparent; }
@@ -197,141 +147,39 @@ iframe {
   .left-nav .nc-icon {
     width: 40px;
     height: auto; }
-  .left-nav .home-link, .left-nav .home-link:visited {
+  .left-nav .home-link,
+  .left-nav .home-link:visited {
     font-size: 0.7rem;
     color: black; }
 
 .step {
   color: #00c2e4; }
 
+.step-short {
+  color: #00c2e4;
+  width: 30%; }
+
 .project-content {
-  padding-left: 10%;
-  width: 95%; }
+  padding: 7%;
+  width: 100%; }
 
 .text-content {
-  margin: 0 5%;
+  margin: 0 10% 0 5%;
   max-width: 50rem; }
   .text-content .p-style {
     padding-top: 1rem;
     min-height: 10rem; }
 
-figure {
-  margin: 0; }
-
-.grids-4 {
-  max-width: 25%;
-  height: 100%;
-  display: block; }
-
-.grids-3 {
-  max-width: 33%;
-  height: 100%;
-  display: block;
-  padding: 1% 1% 0 0; }
+.wide-text {
+  width: 70%;
+  padding-top: 0;
+  max-width: 47rem; }
 
 .amorphous-cat-gif {
   max-width: 19%; }
 
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  margin: auto; }
-
-.mySlides {
-  display: none; }
-  .mySlides img {
-    position: absolute;
-    height: 100%;
-    width: auto;
-    z-index: -1; }
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  -webkit-transition: 0.6s ease;
-  -o-transition: 0.6s ease;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  background: rgba(0, 0, 0, 0.18); }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px; }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background: rgba(0, 0, 0, 0.5); }
-
-/* Caption text */
-.text {
-  background: rgba(0, 0, 0, 0.28);
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center; }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  text-shadow: 1px 2px 2px black; }
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
-  -o-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease; }
-
-.active, .dot:hover {
-  background-color: #717171; }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s; }
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4; }
-  to {
-    opacity: 1; } }
-
-@keyframes fade {
-  from {
-    opacity: .4; }
-  to {
-    opacity: 1; } }
-
 .indented {
-  margin: 15% 2rem 2rem 5%; }
+  margin: 15% 8% 2rem 8%; }
 
 .scroll-down {
   position: absolute;
@@ -349,3 +197,20 @@ figure {
     -webkit-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
     transition: all 0.6s ease; }
+    .scroll-down:hover .material-icons {
+      padding: 0.8rem; }
+
+.blk-stroke {
+  border: 3px solid black;
+  color: black; }
+
+/* Carousel Caption text */
+.text {
+  background: rgba(0, 0, 0, 0.4);
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }

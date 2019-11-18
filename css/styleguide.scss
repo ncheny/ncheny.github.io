@@ -1,11 +1,17 @@
 // this stylesheet overrides some style in main.scss
 // to display it better on this page
+// Citations styling also in here
+
+/////////////// variables///////////////
 $pink: #ff9787;
 $blue: #00c2e4;
 $black: black;
 $lightblue: #f0fbff;
 $shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
 
+
+
+/////////////// markup styling///////////////
 section {
   position: relative;
   margin: 10% 0;
@@ -18,6 +24,8 @@ h3 {
 code {
   word-wrap: break-word;
 }
+
+/////////////// styleguide original content///////////////
 
 #styleguide {
   margin: 5% 5% 5% 10%;
@@ -95,11 +103,13 @@ code {
   color: white;
 }
 
+
+/////////////// styling overrides///////////////
 #bg-beep {
   width: 100%;
 }
-//for the sake of showing in the style guide a second id was made
 
+//for the sake of showing in the style guide a second id was made
 #bg-beep-1 {
   background-image: url("../img/beep/concept3.png");
   width: 33%;
@@ -118,7 +128,11 @@ code {
   top: 16%;
   opacity: 0.9;
 }
-//Citations////////////////////////
+
+
+
+
+/////////////// citations///////////////
 #citation {
   min-height: 100vh;
   padding: 10% 0 0 10%;

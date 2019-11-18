@@ -1,7 +1,7 @@
-/* This is some default styling for the exercise */
+/* This is some default styling for containers */
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -9,10 +9,8 @@
   display: -ms-flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   clear: both;
   height: auto; }
@@ -20,11 +18,9 @@
 .container > .block {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
-  -webkit-flex-grow: 1;
   flex-grow: 1;
   -ms-flex-basis: 30em;
   -ms-flex-preferred-size: 30em;
-  -webkit-flex-basis: 30em;
   flex-basis: 30em;
   padding: 0 1rem; }
 
@@ -33,46 +29,50 @@
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
   flex-flow: row wrap; }
 
 .container .row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  -webkit-flex-direction: row;
   flex-direction: row; }
 
 .container .center {
   -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
   -ms-flex-line-pack: end;
-  -webkit-align-content: flex-end;
   align-content: flex-end; }
 
-.container .row {
-  -ms-flex-wrap: row wrap;
-  -webkit-flex-wrap: row wrap;
-  flex-wrap: row wrap; }
-
-.container .col {
-  -ms-flex-wrap: col wrap;
-  -webkit-flex-wrap: col wrap;
-  flex-wrap: col wrap; }
+@media (max-width: 25em) {
+  #styleguide .sticky-logo {
+    position: relative;
+    width: 10%;
+    opacity: 0.9;
+    margin-left: 45%;
+    margin-top: 5%; } }
 
 /*screen is smaller than 560px*/
 @media (max-width: 35em) {
-  .left-nav, .right-nav {
+  .left-nav,
+  .right-nav {
     display: none; }
+  #styleguide .left-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .vNav {
     display: none; }
   #sticky-logo {
+    top: 27%;
+    width: 20px;
+    left: 3%; }
+    #sticky-logo:hover {
+      width: 23px; }
+  #styleguide .sticky-logo {
     top: 22%;
     width: 6%;
     left: 2%; }
@@ -81,81 +81,159 @@
     .hero-icons .material-icons {
       font-size: 15px; }
     .hero-icons .nc-icon {
-      width: 20px; }
+      width: 15px; }
   .hero-link {
-    margin: 3% 3% 0 3%; }
+    margin: 3% 3% 0; }
   .my-name {
     padding-left: 10%; }
-  .typed-text, .hero-icons {
+  .hero-icons,
+  .typed-text {
     padding-left: 10%;
     -webkit-box-pack: left;
-    -webkit-justify-content: left;
     -ms-flex-pack: left;
     justify-content: left; }
   .project-content {
     padding-left: 0;
     width: 100%; }
-  .header-overview {
-    margin-bottom: 0; }
   .footer-personalInfo {
     width: 100%;
-    margin: 5% 5% 8% 5%; }
+    margin: 0 5%;
+    padding-bottom: 2rem; }
   .footer-listing {
     width: 25%; }
-  .top-link {
-    bottom: 18.25em; }
   .outlinks {
     font-size: 0.8rem; }
   .indented {
-    margin: 15% 1% 2rem 1%; } }
+    margin: 15% 1% 2rem; }
+  .code-block {
+    width: 100%; }
+  body #styleguide {
+    margin: 5%; }
+  #styleguide .square {
+    width: 50%; }
+  #projects .project-header {
+    padding-left: 10%; }
+  body .styleguide-title {
+    padding: 30% 0 10% 10%; }
+  body #citation {
+    padding: 20% 0 0 10%; }
+  .wide-text {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 1rem; } }
 
-/*half-media area resizes earlier at 720px*/
+/*media resizing at 720px*/
 @media (max-width: 50em) {
   .head-1 {
     font-size: 200%; }
   .head-3 {
-    font-size: 80%; }
-  .half-img, .half-text {
+    font-size: 70%; }
+  .half-img,
+  .half-text {
     width: 100%; }
+  .grids-2 {
+    max-width: 50%;
+    height: auto; }
   .grids-3 {
     max-width: 100%;
     height: auto; }
-  .amorphous-cat-gif {
+  #animation .amorphous-cat-gif {
     max-width: 100%; }
   .half-text {
-    margin: 0 4% 4% 0%; }
+    margin: 0 4% 4% 0; }
   .about-text {
-    padding: 0;
-    padding-left: 10%; }
+    padding: 0 0 0 10%; }
   .about-img {
     width: 100%;
     max-width: 20rem; }
-  #featured, #about {
+  #about,
+  #featured {
     height: auto; }
   .featured-description {
     margin: 25% 0 30% 10%; }
   .proj-article {
     max-width: 100%;
     height: auto; }
+  #projects .project-row {
+    min-height: 150vh; }
   iframe {
     height: 20rem; }
-  #top #amorphous-header, #top #beep-header,
-  #bg-amorphous, #bg-beep,
+  #top #beep-header,
+  #top #beep2-header,
+  #top #brg-header,
+  #top #m2m-header,
+  #top #lunular-header,
+  #top #illustration-header,
+  #top #cycle-header, #top #eyexpo-header,
+  #top #evidentp-header,
+  .header-project #amorphous-header,
   .header-text {
     width: 100%; }
-  #top #amorphous-header, #top #beep-header {
-    height: 80vh; }
+  #bg-amorphous,
+  #bg-beep,
+  #bg-illus,
+  #bg-banners, #bg-eyexpo,
+  #bg-evidentp, #bg-brg,
+  #bg-lunular, #bg-m2m,
+  #styleguide #bg-beep-1 {
+    width: 100%;
+    min-height: 10rem; }
+  #top #amorphous-header,
+  #top #beep-header,
+  #top #beep2-header,
+  #top #lunular-header,
+  #top #brg-header,
+  #top #m2m-header,
+  #top #cycle-header,
+  #top #eyexpo-header,
+  #top #illustration-header,
+  #top #evidentp-header {
+    min-height: 70vh;
+    max-height: 70vh; }
+  #amorphous-header:before,
   #beep-header:before,
-  #amorphous-header:before {
+  #beep2-header:before,
+  #brg-header:before,
+  #m2m-header:before,
+  #lunular-header:before,
+  #eyexpo-header:before,
+  #evidentp-header:before,
+  #cycle-header:before {
     display: none; }
+  #bg-illus {
+    background-size: 60%; }
+    #bg-illus:hover {
+      background-size: 65%; }
+  .header-overview {
+    margin-bottom: 0; }
   .header-text {
     -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
-    padding-left: 0;
-    padding: 0 5%; }
+    padding: 0 5%;
+    margin-bottom: 15%; }
     .header-text .head-1 {
       padding-top: 10%; }
   .header-details {
-    padding-top: 10%; } }
+    padding-top: 5%; }
+  .img2-block, .img3-block, .img4-block {
+    width: 100%; }
+  .scroll-down {
+    visibility: hidden;
+    display: none; }
+  .footer-link {
+    font-size: 0.7rem; }
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .cell {
+    width: calc(50% - 2rem); }
+  .step-short {
+    width: 100%; } }

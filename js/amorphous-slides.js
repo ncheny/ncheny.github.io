@@ -1,3 +1,5 @@
+// calling the carousel slides in amorphous page
+
   $(document).ready(function() {
 
     $('.concept-slides').slick({

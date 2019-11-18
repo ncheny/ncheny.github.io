@@ -22,7 +22,7 @@
 
 
 
-
+//////typing animation in landing page hero section
 ! function(window, document, $) {
 
 	"use strict";

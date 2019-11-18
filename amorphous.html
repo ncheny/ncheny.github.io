@@ -10,7 +10,8 @@
   <link href="css/stylesheets.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <!-- tab icon -->
+  <link rel="icon" href="img/me-icon.png">
 </head>
 <!-- Nav menu -->
 
@@ -19,7 +20,7 @@
 
   <nav id="nav-default">
     <div class="left-nav">
-      <a class="head-3 my-name" href="index.html">
+      <a class="head-3 my-name" href="index.html#projects">
           <img alt="nc logo icon" class="nc-icon" src="img/nc.png">
 
       <div class="head-3 home-link">
@@ -33,8 +34,8 @@
     <div class="centered nav-sticky">
       <a class="" href="index.html"><img alt="nc logo icon" class="nc-icon" src="img/nc.png" style="opacity:1;" id="sticky-logo"></a>
       <a class="head-3 hero-link button-link" href="index.html#projects"> projects </a>
+      <a class="head-3 hero-link button-link" href="index.html#illustrations"> illustrations </a>
       <a class="head-3 hero-link button-link" href="index.html#about"> about </a>
-      <a class="head-3 hero-link button-link" href="img/resume.pdf" target="_blank"> resume </a>
     </div>
   </nav>
   <!-- end mobile nav -->
@@ -81,14 +82,13 @@
       </div>
     </div>
     <div class="centered our-blue">
-      <a class="button-link  outlinks" href="http://www.sfu.ca/~dragas/IAT%20343/home.html"> Visit Our Development Blog</a>
+      <a class="button-link centered outlinks" href="http://www.sfu.ca/~dragas/IAT%20343/home.html"> Visit Our Development Blog</a>
     </div>
   </div>
 
   <!-- </div> -->
 
 
-  <div class="project-content">
     <section id="concept" class="section indented" data-section-name="concept">
       <div class="container">
 
@@ -258,19 +258,40 @@
       </div>
     </section>
 
-    <section class="section indented fullW-text">
-      <div class="container" id="animation">
-        <h2 class="head-2 step">Animation</h2>
-        <div class="p-style">
+    <section class="section">
+      <div class="indented container" id="animatic" data-section-name="animatic">
+
+        <div class="half-text">
+          <div class="text-content">
+            <h2 class="head-2 step">Animatic Video</h2>
+            <div class="p-style">
+              The purpose of the animatic video is to grasp the timing of each shots and the character's general movements. During this process, our group divided the video into 4 main sequence: the forest, grassland, cave, and the base.
+              <br><br>
+              As I was assigned the forest scene, that was also the part I worked on in the animatic (0:06-0:33).
+            </div>
+          </div>
+        </div>
+
+        <div class="half-img">
+          <iframe src='https://player.vimeo.com/video/158144082' title="amorphous final video"></iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container  indented fullW-text" id="animation">
+        <h2 class="head-2 step-short">Animation</h2>
+        <div class="p-style wide-text">
           Since our group divided the video into 4 sections (woods, grassland, cave, and motherbase), I was responsible for animating the forest scene (0:13-0:47) which had 10 different shots. Each shot was animated in a pre-selected view and the process of animating and rendering took about
           2 days.
         </div>
+      </div>
 
-        <div class="container centered">
-          <div class="grids-3 amorphous-cat-gif"><img src="img/amorphous/cat-alien.gif" alt="animation of cat alien stretching its leg"></div>
-          <div class="grids-3"><img src="img/amorphous/meet-cat.gif" alt="animation clip of the astonaut meeting the cat"></div>
-          <div class="grids-3"><img src="img/amorphous/walk-away.gif" alt="animation clip of the astronaut walking away"></div>
-        </div>
+      <div class="container centered fullW-img">
+        <div class="grids-3 amorphous-cat-gif"><img src="img/amorphous/cat-alien.gif" alt="animation of cat alien stretching its leg"></div>
+        <div class="grids-3"><img src="img/amorphous/meet-cat.gif" alt="animation clip of the astonaut meeting the cat"></div>
+        <div class="grids-3"><img src="img/amorphous/walk-away.gif" alt="animation clip of the astronaut walking away"></div>
       </div>
     </section>
 
@@ -316,61 +337,89 @@
       </div>
     </section>
 
-    <!-- end project content -->
-  </div>
+
+    <!-- footer -->
+        <footer id="footer" class="our-grey">
+          <!-- top half of footer: contains company contact info and page links -->
+
+          <div class="container footer-top">
+            <div class="footer-personalInfo">
+              <a class="nav-title" href="index.html#top">
+                Nancy Chen
+              </a>
 
 
-  <footer id="footer" class="our-blue">
-    <!-- top half of footer: contains company contact info and page links -->
+              <a href="mailto:nancy_chen107@hotmail.com" class="contact email">
+                  <i class="material-icons mail_outline social-icon">&#xE0E1;</i>
+                  <span class="footer-label">nancy_chen107@hotmail.com</span>
+              </a>
+              <a class="contact" href="https://www.linkedin.com/in/nancy-chen-b20206133/">
+                <img class="footer-icon social-icon" src="img/icons/blk-filled-linkedin.png" alt="">
+                <span class="footer-label">linkedin.com/nancy-chen</span>
+              </a>
+            </div>
+            <div class="footer-listings-section">
+            <div class="footer-listing">
+              <ul>
+                <li><a class="footer-link" href="index.html#about">About</a></li>
+                <li><a class="footer-link" href="index.html#projects">Projects</a></li>
+                <li><a class="footer-link" href="img/resume.pdf" target="_blank">Resume</a></li>
+                <li><a class="footer-link" href="index.html#illustrations">Illustrations</a></li>
+              </ul>
+            </div>
 
-    <div class="container footer-top">
-      <div class="footer-personalInfo">
-        <a class="nav-title" href="index.html#top">
-        Nancy Chen
-      </a>
+            <div class="footer-listing">
+              <ul>
+                <li class="footer-link-section-title">Graphic Design</li>
+                <li><a class="footer-link" href="brg.html">Bill Reid Gallery</a></li>
+                <li><a class="footer-link" href="eyexpo.html">Eyexpo</a></li>
+                <li><a class="footer-link" href="surreybanners.html">Surrey Banners</a></li>
+              </ul>
+            </div>
 
+            <div class="footer-listing">
+              <ul>
+                <li class="footer-link-section-title">UI/UX</li>
+                <li><a class="footer-link" href="lunular.html">Lunular</a></li>
+                <li><a class="footer-link" href="m2m.html">Music to Movement</a></li>
+                <li><a class="footer-link" href="evidentpoint.html">Evident Point</a></li>
+              </ul>
+            </div>
+            <div class="footer-listing">
+              <ul>
+                <li class="footer-link-section-title">Story</li>
+                <li><a class="footer-link" href="beep2.html">Beep</a></li>
+                <li><a class="footer-link" href="amorphous.html">Amorphous</a></li>
+              </ul>
+            </div>
+            <div class="footer-listing">
+              <ul>
+                <li class="footer-link-section-title">Other</li>
+                <li><a class="footer-link" href="https://ynchen.wixsite.com/portfolio">Older Wix Porfolio</a></li>
+                <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
 
-        <a href="mailto:yca207@sfu.ca" class="contact email">
-          <i class="material-icons md-light social-icon">&#xE0E1;</i>
-          <span class="footer-label">yca207@sfu.ca</span>
-      </a>
-        <a class="contact" href="https://www.linkedin.com/in/nancy-chen-b20206133/">
-        <img class="footer-icon social-icon" src="img/icons/wht-filled-linkedin.png" alt="">
-        <span class="footer-label">linkedin.com/nancy-chen</span>
-      </a>
-      </div>
+              </ul>
+            </div>
+          </div>
 
-      <div class="footer-listing">
-        <ul>
-          <li><a class="footer-link" href="index.html#about">About</a></li>
-          <li><a class="footer-link" href="index.html#projects">Projects</a></li>
-          <li><a class="footer-link" href="img/resume.pdf" target="_blank">Resume</a></li>
-        </ul>
-      </div>
+            <!-- <div class="footer-listing">
+              <ul>
+                <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
+                <li><a class="footer-link" href="citations.html">Citation</a></li>
+                <li><a class="footer-link" href="https://github.com/pomatoman/myPortfolio">Git Repo</a></li>
+              </ul>
+            </div> -->
+            <!-- go back up -->
+            <a class="top-link" href="#top">
+              <div> ^ </div>
+            </a>
+          </div>
 
-      <div class="footer-listing">
-        <ul>
-          <li><a class="footer-link" href="amorphous.html">Amorphous</a></li>
-          <li><a class="footer-link" href="beep.html">Beep</a></li>
-          <li><a class="footer-link" href="illustrations.html">Drawings</a></li>
-        </ul>
-      </div>
+          <div class="container footer-bottom copyright"> ©2019 Ying Nancy Chen. All rights reserved
+          </div>
 
-      <div class="footer-listing">
-        <ul>
-          <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
-          <li><a class="footer-link" href="citations.html">Citation</a></li>
-          <li><a class="footer-link" href="https://github.com/pomatoman/myPortfolio">Git Repo</a></li>
-        </ul>
-      </div>
-      <!-- go back up -->
-      <a class="top-link" href="#top">
-        <div> ^ </div>
-      </a>
-    </div>
-
-  </footer>
-  <!-- end footer -->
+        </footer>
+      <!-- footer ends -->
   <!-- end of project writup -->
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

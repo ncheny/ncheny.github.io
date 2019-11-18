@@ -4,12 +4,9 @@ $blue: #00c2e4;
 $black: black;
 $lightblue: #f0fbff;
 $shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); /* ------------- body layout ------------- */
-// html,footer,body {
-//   height: 100%;
-//   font-family: 'Roboto Mono', sans-serif;
-//
-// }
 
+
+/////////////// markup styling///////////////
 body {
   font-family: 'Roboto Mono', sans-serif;
   /*padding: 1em;*/
@@ -39,6 +36,21 @@ img {
   height: auto;
 }
 
+
+.cell img{
+  display: block;
+}
+
+.cell{
+display: inline-block;
+ width: calc(16.6666% - 2.5rem );
+ margin: 1rem;
+}
+
+.responsive-image{
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -46,21 +58,31 @@ a {
 strong {
   color: black;
 }
+
+em{
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+figcaption{
+  font-style: italic;
+  margin:0.5rem;
+}
 /* ------------- styling of atoms ------------- */
-/* stylized headers */
+
+////////* stylized headers *////////////////
+
 [class*="head-"] {
-  /*font-family: 'Playfair Display', serif;*/
   font-family: 'Poppins', sans-serif;
-  // margin: 2.15% 0 2.15% 0;
-  /*text-transform: uppercase;*/
 }
 
 .head-1 {
   font-family: 'Roboto Mono', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   margin: 0;
-  font-size: 250%;
+  font-size: 200%;
   // display: inline-block;
   text-transform: uppercase;
   font-weight: bold;
@@ -99,7 +121,6 @@ strong {
   width: 100%;
   flex-wrap: wrap;
 }
-/* fonting some elements */
 .p-style {
   font-family: 'Roboto Mono', sans-serif;
   padding: 1rem 0;
@@ -117,7 +138,8 @@ strong {
   top: 3px;
   font-size: 0.8rem;
 }
-/*nav*/
+
+////////////////*nav*/////////////////////////////
 .nav-default {
   background-color: white;
   -webkit-box-shadow: $shadow;
@@ -139,7 +161,7 @@ strong {
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  box-shadow: $shadow;
+  // box-shadow: $shadow;
   padding: 0.5rem 0;
 }
 
@@ -222,69 +244,20 @@ strong {
   text-align: center;
   font-family: 'Roboto Mono', sans-serif;
 }
-// .index-content {
+
+// .label {
+//   color: black;
 //   position: relative;
+//   top: -60%;
+//   right: -200%;
+//   width: 100%;
+//   text-align: left;
+//   font-size: 1em;
+//   color: $blue;
+//   display: none;
 // }
 
-.vNav {
-  position: fixed;
-  top: 30%;
-  // left: 80%;
-  width: 50px;
-  z-index: 9999;
-  list-style-type: none;
-}
-
-.vNav ul {
-  position: relative;
-  padding: 3px;
-  // padding-left: 35%;
-}
-
-.vNav ul li {
-  position: relative;
-  padding-bottom: 1rem;
-  padding-left: 35%;
-  color: $blue;
-}
-
-.vNav a {
-  display: block;
-  width: 12px;
-  height: 12px;
-  // text-indent: -9999px;
-  border-radius: 50%;
-  border: 2px solid;
-  border-color: $blue;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.vNav a:hover {
-  border-radius: 50%;
-  background-color: $blue;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.vNav a.active {
-  border-radius: 50%;
-  background-color: $blue;
-  text-decoration: none;
-}
-
-.label {
-  color: black;
-  position: relative;
-  top: -60%;
-  right: -200%;
-  width: 100%;
-  text-align: left;
-  font-size: 1em;
-  color: $blue;
-  display: none;
-}
-/* buttons now */
+/////////////* buttons  *///////////////
 [class*="button-"] {
   font-size: 1.2em;
   padding: 0.5rem 0;
@@ -315,8 +288,9 @@ strong {
     transition: all 0.3s ease-in-out;
   }
 }
-/* color palette */
-/* standard colors */
+
+
+///////////* color palette *////////////////////
 .our-black {
   background: $black;
   color: white;
@@ -336,8 +310,8 @@ strong {
   background: $blue;
   color: white;
 }
-/*styleguide*/
 
+///////////* general index page content *////////////
 [id*="section-"] {
   margin: 0 2rem 5rem 0;
   flex: 1;
@@ -408,7 +382,15 @@ strong {
   box-shadow: $shadow;
 
   .project-header {
-    margin: 5% 0;
+    margin: 4%;
+    text-shadow: $shadow;
+    color: $black;
+    max-width: 10rem;
+    // margin: 5% 80% 5% 5%;
+    // padding: 0.3rem;
+    // background-color: white;
+    // writing-mode: vertical-lr;
+    // text-orientation: inherit;
   }
 }
 
@@ -422,6 +404,7 @@ strong {
   display: flex;
   transition: 0.2s linear;
   background-position: center;
+  width: 27%;
 
   &:hover {
     background-color: lighten($blue, 5%);
@@ -430,8 +413,37 @@ strong {
 }
 
 #bg-beep {
-  background-image: url("../img/beep/concept3.png");
-  width: 33%;
+  background-image: url("../img/beep2/beep2BG.png");
+  background-size: 80%;
+
+  &:hover {
+    background-size: 85%;
+    transition: 0.2s linear;
+  }
+}
+
+#bg-brg {
+  background-image: url("../img/brg/brgBG.png");
+  background-size: 80%;
+
+  &:hover {
+    background-size: 85%;
+    transition: 0.2s linear;
+  }
+}
+
+#bg-lunular {
+  background-image: url("../img/lunular/lunularBG.png");
+  background-size: 80%;
+
+  &:hover {
+    background-size: 85%;
+    transition: 0.2s linear;
+  }
+}
+
+#bg-m2m {
+  background-image: url("../img/m2m/devices.png");
   background-size: 80%;
 
   &:hover {
@@ -443,7 +455,6 @@ strong {
 #bg-amorphous {
   background-image: url("../img/amorphous/astronaut-render.png");
   background-size: 23%;
-  width: 33%;
 
   &:hover {
     background-size: 25%;
@@ -452,41 +463,37 @@ strong {
 }
 
 #bg-evidentp {
-  background-image: url("../img/beep/preview.jpg");
-  width: 100%;
-  background-size: 120%;
+  background-image: url("../img/evidentpoint/preview.png");
+  background-size: 80%;
 
   &:hover {
-    background-size: 130%;
+    background-size: 85%;
     transition: 0.2s linear;
   }
 }
 
 #bg-eyexpo {
-  background-image: url("../img/eyexpo/preview.jpg");
-  width: 100%;
-  background-size: 110%;
+  background-image: url("../img/eyexpo/techglobe.png");
+  background-size: 70%;
 
   &:hover {
-    background-size: 120%;
+    background-size: 75%;
     transition: 0.2s linear;
   }
 }
 
 #bg-banners {
-  background-image: url("../img/streetbanners/preview.JPG");
-  width: 100%;
-  background-size: 160%;
+  background-image: url("../img/streetbanners/final.png");
+  background-size: 60%;
 
   &:hover {
-    background-size: 170%;
+    background-size: 66%;
     transition: 0.2s linear;
   }
 }
 
 #bg-illus {
   background-image: url("../img/illustrations/preview.png");
-  width: 33%;
   background-size: 80%;
 
   &:hover {
@@ -510,6 +517,9 @@ strong {
 }
 
 .proj-title {}
+
+
+///////////* about section *////////////
 
 #about {
   // padding: 5rem 0 3rem;
@@ -538,6 +548,7 @@ strong {
     transition: 0.2s linear;
   }
 }
+
 ////////half-blocks /////////////
 .half-img {
   width: 50%;
@@ -557,17 +568,32 @@ strong {
   padding-left: 2%;
   // padding: 0 1rem;
 }
-/*-------------footer----------*/
+.fullW-img {
+  padding-top: 2%;
+  // padding: 0 1rem;
+}
+
+.padded-text{
+  margin: 2rem 8%;
+}
+
+///////////* footer *////////////
+
 #footer {
   margin-top: 5rem;
 }
 
 footer .nav-title {
-  color: white;
+  color: $blue;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   width: 100%;
   text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-title:visited{
+  color: $blue;
 }
 
 .contact {
@@ -576,6 +602,7 @@ footer .nav-title {
   font-size: 0.9rem;
   position: relative;
   display: block;
+  color: $black;
 
   .email:visited {
     color: #f5f5f5;
@@ -593,23 +620,34 @@ footer .nav-title {
   margin-top: 1rem;
 }
 
+.footer-link-section-title{
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 0.8rem;
+  color: $black;
+}
+
 .footer-link {
   font-family: 'Roboto Mono', sans-serif;
-  font-size: 0.9rem;
-  color: #f5f5f5;
+  font-size: 0.8rem;
+  color: $black;
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.4;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.nav-title:hover,
+.email:hover,
+.contact:hover {
   // font-size: 1rem;
+  color: $blue;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
   opacity: 1;
+text-shadow:$shadow;
 }
 
 .footer-top {
@@ -618,6 +656,7 @@ footer .nav-title {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-top: 10rem;
 }
 
 .footer-personalInfo {
@@ -627,6 +666,13 @@ footer .nav-title {
   max-width: 30rem;
 }
 
+.footer-listings-section{
+  width: 60%;
+display: flex;
+flex-wrap: wrap;
+
+}
+
 .footer-listing {
   margin: 3%;
 
@@ -634,9 +680,27 @@ footer .nav-title {
     margin: 3% 0;
   }
 }
+
+.footer-bottom {
+  padding: 0.8rem;
+  /*text-align: center;*/
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #2a2a2a;
+}
+
+.copyright{
+  color: grey;
+  font-family: 'Roboto Mono', sans-serif;
+font-size: 0.7rem;
+text-decoration: none;
+letter-spacing: 0.3rem;
+}
+
 // icons////////////////////////////////
 .social-icon {
-  color: white;
+  // color: white;
   max-width: 24px;
   height: auto;
   opacity: 0.7;
@@ -695,28 +759,34 @@ footer .nav-title {
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-////////////////////links
+
+
+////////////////////links styling//////////////////
 .top-link {
-  width: 3.25em;
-  height: 3.25em;
+  width: 2.5em;
+  height: 2.5em;
   border-radius: 50%;
-  background: $black;
+  background: black;
   display: inline-block;
   text-align: center;
-  position: relative;
+  position: fixed;
   z-index: 4;
-  bottom: 0.25em;
-  padding-top: 1.2rem;
+  bottom: 2%;
+  padding-top: 0.8rem;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
   -webkit-transition: 0.2s ease;
   color: white;
   text-decoration: none;
+  right: 2%;
+  opacity: 0.3;
+  z-index:100000;
 }
 
 .top-link:hover {
+  opacity: 1;
   color: white;
-  transform: scale(1.2);
+  // transform: scale(1.1);
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
@@ -741,8 +811,11 @@ footer .nav-title {
   text-decoration: underline;
 }
 
+
+///////////* animations *////////////
+
 .about-dropdown {
-  animation-name: dropdown;
+  animation-name: slide-in;
   animation-duration: 3s;
   animation-timing-function: ease-in-out; // -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
   // animation-delay: 1s;
@@ -765,6 +838,11 @@ footer .nav-title {
 .hero-content {
   position: relative;
 }
+
+
+
+// animation-names
+
 @keyframes dropdown {
   from {
     opacity: 0;
@@ -773,6 +851,19 @@ footer .nav-title {
 
   to {
     top: 0;
+    opacity: 1;
+  }
+}
+
+
+@keyframes slide-in{
+  from{
+    left: -20rem;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
     opacity: 1;
   }
 }

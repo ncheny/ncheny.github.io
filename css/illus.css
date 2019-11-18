@@ -9,88 +9,68 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative; }
 
-.proj-row {
-  margin-top: 2%;
-  width: 100%; }
+#illustrations {
+  background-color: #f6faff; }
 
-[class*="illus-"] {
-  background-repeat: no-repeat;
-  background-size: 100%;
+.illus-headtext {
+  margin: 5% 5% 5% 0;
+  text-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+  color: #181b20; }
+
+.cell {
   display: block;
-  -webkit-transition: 0.2s linear;
-  -o-transition: 0.2s linear;
-  transition: 0.2s linear;
-  background-position: center;
-  margin: 1%;
-  background-size: cover;
-  width: 23%;
-  height: 30rem;
-  border: solid 1px lightgrey;
+  width: 90%;
+  height: auto; }
+
+.column-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  overflow-x: hidden; }
+
+.cell img:hover {
+  -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+  box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
   -webkit-transition: 0.6s ease;
   -o-transition: 0.6s ease;
   transition: 0.6s ease; }
-  [class*="illus-"]:hover {
-    -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
-    box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
-    -webkit-transition: 0.6s ease;
-    -o-transition: 0.6s ease;
-    transition: 0.6s ease; }
 
-.illus-1 {
-  background-image: url("../img/illustrations/12kyoko.jpg"); }
+@media only screen and (min-width: 700px) {
+  .cell {
+    width: 42%; }
+  .column-flex {
+    width: 100%;
+    height: 4000px; } }
 
-.illus-2 {
-  background-image: url("../img/illustrations/blknpurp.jpg"); }
+@media only screen and (min-width: 800px) {
+  .cell {
+    width: 32%; }
+  .column-flex {
+    width: 100%;
+    height: 3605px; } }
 
-.illus-3 {
-  background-image: url("../img/illustrations/jojo.jpg"); }
+@media only screen and (min-width: 1090px) {
+  .cell {
+    width: 25%; }
+  .column-flex {
+    width: 100%;
+    height: 3060px; } }
 
-.illus-4 {
-  width: 48%;
-  height: 20rem;
-  background-image: url("../img/illustrations/internalized.png"); }
-
-.illus-5 {
-  width: 48%;
-  height: 20rem;
-  background-image: url("../img/illustrations/dogtooth.jpg"); }
-
-.illus-6 {
-  width: 30%;
-  background-image: url("../img/illustrations/cryingboy.jpg"); }
-
-.illus-7 {
-  width: 30%;
-  background-image: url("../img/illustrations/Roundumbrellagirl.jpg"); }
-
-.illus-8 {
-  width: 30%;
-  background-image: url("../img/illustrations/n04.jpg"); }
-
-.illus-9 {
-  background-image: url("../img/illustrations/p3.jpg"); }
-
-.illus-10 {
-  height: 20rem;
-  background-size: contain;
-  background-image: url("../img/comics/lp1.jpg"); }
-
-.illus-11 {
-  height: 20rem;
-  background-size: contain;
-  background-image: url("../img/comics/lp2.jpg"); }
-
-.illus-12 {
-  height: 20rem;
-  background-size: contain;
-  background-image: url("../img/comics/lp3.jpg"); }
-
-.illus-13 {
-  height: 20rem;
-  background-size: contain;
-  background-image: url("../img/comics/lp4.jpg"); }
+@media only screen and (min-width: 1550px) {
+  .cell {
+    width: 20%; }
+  .column-flex {
+    width: 100%;
+    height: 2500px; } }

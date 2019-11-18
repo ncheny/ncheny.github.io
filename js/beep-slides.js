@@ -1,3 +1,5 @@
+// calling carousel slides in the beep page
+
 $(document).ready(function() {
   // $('.concept-slides', ).slick({
   //   dots: true,

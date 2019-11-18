@@ -8,9 +8,14 @@
 
   <title>Nancy Chen- Portfolio</title>
   <link href="css/stylesheets.css" rel="stylesheet">
+  <link href="css/illus.css" rel="stylesheet">
+
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" /> -->
+  <link rel="icon" href="img/me-icon.png">
+  <!-- light gallery icons -->
+  <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
 
 </head>
 <!-- Nav menu -->
@@ -18,143 +23,229 @@
 <body>
 
   <div id="top">
+    <nav class="centered nav-sticky" id="nav-default">
+      <a href="index.html#top"><img alt="nc logo icon" class="nc-icon" src="img/nc.png" id="sticky-logo"></a>
+      <a class="head-3 hero-link button-link centered" href="index.html#projects" style="color:black;"> projects </a>
+      <a class="head-3 hero-link button-link centered" href="index.html#illustrations" style="color:black;"> illustrations </a>
+      <a class="head-3 hero-link button-link centered" href="index.html#about" style="color:black;"> about </a>
+      <a class="head-3 hero-link button-link centered" id="resume" href="img/resume.pdf" target="_blank" style="color:black;"> View Resume </a>
+    </nav>
 
-    <div class="our-pink section" id="hero">
-      <div class="hero-hidden our-pink"></div>
+    <div class="our-blue section" id="hero">
+      <div class="hero-hidden our-blue"></div>
 
       <div class="hero-content hero-dropdown">
-        <div class="hero-icons">
-          <div class="tooltip">
-            <span class="tooltiptext">Game Design</span>
-            <i class="material-icons md-light">&#xE338;</i>
-          </div>
-          <div class="tooltip">
-            <span class="tooltiptext">UX/UI</span>
-            <i class="material-icons md-light">&#xE333;</i>
-          </div>
-          <div class="tooltip">
-            <span class="tooltiptext">Illustration</span>
-            <i class="material-icons md-light">&#xE3AE;</i>
-          </div>
-          <div class="tooltip">
-            <span class="tooltiptext">Me!</span>
-            <img alt="nc logo icon" class="nc-icon" src="img/nc-wht.png">
-          </div>
-          <div class="tooltip">
-            <span class="tooltiptext">Storyboard</span>
-            <i class="material-icons md-light">&#xE54B;</i>
-          </div>
-          <div class="tooltip">
-            <span class="tooltiptext">Animation</span>
-            <i class="material-icons md-light">&#xE54D;</i>
-          </div>
-          <div class="tooltip">
-            <span class="tooltiptext">Foodie</span>
-            <i class="material-icons md-light">&#xE561;</i>
-          </div>
-        </div>
         <div class="my-name centered">
           <h1 class="head-1 ">Nancy Chen </h1>
         </div>
         <div class="centered typed-text">
-          <h2 class="head-4">I like <span class="typed"></span></h2>
+          <!-- typing happens here -->
+          <h2 class="head-4"> <span class="typed"></span></h2>
         </div>
       </div>
     </div>
 
-    <nav class="centered nav-sticky our-pink" id="nav-default">
-      <a href="index.html#top"><img alt="nc logo icon" class="nc-icon" src="img/nc.png" id="sticky-logo"></a>
-      <a class="head-3 hero-link button-link" href="index.html#projects" style="color:white;"> projects </a>
-      <a class="head-3 hero-link button-link" href="index.html#about" style="color:white;"> about </a>
-      <a class="head-3 hero-link button-link" href="img/resume.pdf" target="_blank" style="color:white;"> resume </a>
-    </nav>
 
-
+<!-- graphic design -->
     <div class="section our-blue" id="projects">
-      <div class="head-1 centered project-header">Featured Projects</div>
+      <!-- <div class="head-1 project-header">Graphic Design</div> -->
 
       <div class="our-blue container project-row">
-        <a class="" id="bg-beep" href="beep.html">
+        <div class="head-1 project-header">Graphic Design</div>
+
+        <a class="" id="bg-brg" href="brg.html">
           <div class="featured-description">
-            <div class="head-3">01 </div>
+            <div class="head-3">2018 </div>
+            <h2 class="head-1"> Bill Reid Gallery</h2>
+            <div class="head-4">Graphic design</div>
+            <!-- <div class="head-4">Graphic Design Internship</div> -->
+          </div>
+        </a>
+
+        <a class="" id="bg-eyexpo" href="eyexpo.html">
+          <div class="featured-description">
+            <div class="head-3">2017 </div>
+            <h2 class="head-1"> Eyexpo</h2>
+            <div class="head-4">Graphic design, VR, UI</div>
+
+            <!-- <div class="head-4">VR & Graphic Design Internship</div> -->
+          </div>
+        </a>
+
+        <a class="" id="bg-banners" href="surreybanners.html">
+          <div class="featured-description">
+            <div class="head-3">2015 </div>
+            <h2 class="head-1"> Surrey Banners</h2>
+            <div class="head-4">Illustration, graphic design</div>
+
+            <!-- <div class="head-4">Winning Public Contest Design</div> -->
+          </div>
+        </a>
+
+
+
+      </div>
+
+      <!-- UX UI -->
+
+      <!-- <div class="head-1  project-header">UX & UI</div> -->
+      <div class="our-blue container project-row">
+        <div class="head-1  project-header">UX & UI</div>
+
+        <a class="" id="bg-lunular" href="lunular.html">
+          <div class="featured-description">
+            <div class="head-3">2019 </div>
+            <h2 class="head-1"> Lunular</h2>
+            <div class="head-4">UI, UX, visual design</div>
+
+            <!-- <div class="head-4">AR Nail Design App & Website</div> -->
+          </div>
+        </a>
+
+        <a class="" id="bg-m2m" href="m2m.html">
+          <div class="featured-description">
+            <div class="head-3">2017 </div>
+            <h2 class="head-1"> Music to Movement</h2>
+            <div class="head-4">UI, UX, graphic design</div>
+            <!-- <div class="head-4">Stroke Rehabilitation Software</div> -->
+          </div>
+        </a>
+
+        <a class="" id="bg-evidentp" href="evidentpoint.html">
+          <div class="featured-description">
+            <div class="head-3">2016 </div>
+            <h2 class="head-1"> Evident Point</h2>
+            <div class="head-4">UI, HTML, quality assurance</div>
+
+            <!-- <div class="head-4">UI & Web Internship</div> -->
+          </div>
+        </a>
+      </div>
+
+      <div class="our-blue container project-row">
+        <div class="head-1  project-header">Story</div>
+
+        <a class="" id="bg-beep" href="beep2.html">
+          <div class="featured-description">
+            <div class="head-3">2019 </div>
             <h2 class="head-1"> BEEP</h2>
-            <div class="head-4">3D Video Game 2017</div>
+            <div class="head-4">Art, layout, game design, UI, UX, sound</div>
+            <!-- <div class="head-4">3D Video Game </div> -->
           </div>
         </a>
 
         <a class="" id="bg-amorphous" href="amorphous.html">
           <div class="featured-description">
-            <div class="head-3">02 </div>
-            <h2 class="head-1"> Amorphous</h2>
-            <div class="head-4">3D Animation 2016</div>
+            <div class="head-3">2016 </div>
+            <h2 class="head-1"> Amorphous </h2>
+            <!-- <div class="head-4">3D Animation </div> -->
+            <div class="head-4">Art, layout, sound, animation</div>
+
           </div>
         </a>
 
-        <a class="" id="bg-illus" href="illustrations.html">
+        <!-- <a class="" id="bg-illus" href="illustrations.html">
           <div class="featured-description">
-            <div class="head-3">03 </div>
-            <h2 class="head-1"> drawings</h2>
-            <div class="head-4">sketches & renders</div>
+            <div class="head-3">Recent </div>
+            <h2 class="head-1"> Drawings</h2>
+            <div class="head-4"></div>
           </div>
-        </a>
+        </a> -->
       </div>
     </div>
 
-    <!-- <div class="section">
-<div class="projects">
-        <div class="container centered">
-
-          <a class="proj-article our-black" id="bg-evidentp">
-            <div class="proj-description">
-              <div class="proj-title head-3 ">Evident Point </div>
-              <div class=" head-4 ">ui designer 2016</div>
+    <!-- Drawings section -->
+          <div class="project-content" id="illustrations">
+            <div class="illus-headtext">
+              <div class="head-1 project-header">illustrations</div>
             </div>
-          </a>
-
-          <a class="proj-article our-black" id="bg-eyexpo">
-            <div class="proj-description">
-              <div class="proj-title head-3 ">Eyexpo </div>
-              <div class=" head-4 ">graphic designer 2017</div>
+            <div id="aniimated-thumbnials" class="container column-flex">
+                <a class="cell" href="img/illustrations/flowerpods.jpg" data-sub-html="">
+                  <img src="img/illustrations/flowerpods.jpg" alt=""/>
+                </a>
+                <a class="cell"href="img/illustrations/nge.jpg" data-sub-html="">
+                  <img src="img/illustrations/nge.jpg" alt=""/>
+                </a>
+                <a class="cell"href="img/illustrations/ff14.jpg" data-sub-html="">
+                  <img src="img/illustrations/ff14.jpg" alt=""/>
+                </a>
+                <a class="cell"href="img/illustrations/youko.jpg" data-sub-html="">
+                  <img src="img/illustrations/youko.jpg" alt=""/>
+                </a>
+               <a class="cell"href="img/illustrations/snufkinMoomin.jpg" data-sub-html="">
+                 <img src="img/illustrations/snufkinMoomin.jpg" alt=""/>
+              </a>
+              <a class="cell"href="img/illustrations/rilakkuma.jpg" data-sub-html="">
+                <img src="img/illustrations/rilakkuma.jpg" alt=""/>
+              </a>
+              <a class="cell"href="img/illustrations/castella.jpg" data-sub-html="">
+                <img src="img/illustrations/castella.jpg" alt=""/>
+              </a>
+              <a class="cell"href="img/illustrations/croissant.jpg"  data-sub-html="">
+                <img src="img/illustrations/croissant.jpg" alt=""/>
+              </a>
+              <a class="cell"href="img/illustrations/moomin-winter.jpg" data-sub-html="">
+                <img src="img/illustrations/moomin-winter.jpg" alt=""/>
+              </a>
+              <a class="cell" href="img/illustrations/hnk.jpg" data-sub-html="">
+                <img src="img/illustrations/hnk.jpg" alt=""/>
+              </a>
+              <a class="cell"href="img/illustrations/nanu.jpg"  data-sub-html="">
+                <img src="img/illustrations/nanu.jpg" alt=""/>
+              </a>
+              <a class="cell"href="img/illustrations/oldTownRoad.jpg"  data-sub-html="">
+                <img src="img/illustrations/oldTownRoad.jpg" alt=""/>
+              </a>
+              <a class="cell"href="img/illustrations/cryingboy.jpg"  data-sub-html="">
+                <img src="img/illustrations/cryingboy.jpg" alt=""/>
+              </a>
+              <a class="cell"href="img/illustrations/beachsketch.JPG" data-sub-html="">
+                <img src="img/illustrations/beachsketch.JPG" alt=""/>
+              </a>
+              <a class="cell"href="img/illustrations/coffee.jpg" data-sub-html="">
+                <img src="img/illustrations/coffee.jpg" alt=""/>
+              </a>
+              <a class="cell"href="img/illustrations/sunny.JPG" data-sub-html="">
+                <img src="img/illustrations/sunny.JPG" alt=""/>
+              </a>
+              <a class="cell"href="img/illustrations/p3.jpg" data-sub-html="">
+                <img src="img/illustrations/p3.jpg" alt=""/>
+              </a>
+              <a class="cell"href="img/illustrations/popol.jpg" data-sub-html="">
+                <img src="img/illustrations/popol.jpg" alt=""/>
+              </a>
             </div>
-          </a>
+            <!-- end lightgallery -->
+          </div>
+          <!-- end drawings section -->
 
-          <a class="proj-article our-black" id="bg-banners">
-            <div class="proj-description">
-              <div class="proj-title head-3 ">Surrey Banners </div>
-              <div class=" head-4 "> winning design 2014</div>
-            </div>
-          </a>
 
-          <a class="proj-article our-blue" id="bg-illus" href="illustrations.html">
-            <div class="proj-description">
-              <div class="proj-title head-3 ">Illustrations </div>
-              <div class=" head-4 ">sketches & renders </div>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </div> -->
-
+<!-- about section -->
     <div class="section">
       <div id="about">
         <div class="container">
           <div class="half-img">
-            <img alt="a long person poking their head out from the top" class="about-img hidden" src="img/me.png">
+            <img alt="nancy wearing glasses" class="about-img hidden" src="img/me.png">
           </div>
           <div class="half-text about-text ">
             <h2 class="head-1 step">Hello!</h2>
             <p class="p-style">
-              I'm Nancy! I'm a hardworking design student interested in game design, 3D modelling, concept art, and web design. Experienced in sketching, storytelling, and HTML& CSS, I like to contribute to fun projects. While front end design is my passion,
-              I enjoy multi-tasking between code and asset-creation.<br>
-              <br> In my free time, I can be found doodling, playing video games, or scrolling through Twitter.</p>
+              I'm a recent Bachelor of Science graduate from SFU's School of Interactive Arts. Experienced in graphic design, UI/UX, illustration, and web design, I am looking for work in video game, UI, or graphic design. While comfortable with front end design, I also enjoy multi-tasking between code building and designing.
 
-            <a class="head-2 about-resume button-link" href="img/resume.pdf" target="_blank"> &gt; Resume </a>
+              <br><br> In my free time, I can be found doodling, playing Pokemon Go, or watching movies while hoola-hooping.
+
+              <br><br>Currently on the lookout for new grad opportunities. If I look like a potential fit for your team, please feel free to reach out!
+            </p>
+
+              <br></p>
+
+            <a class="head-2 about-resume button-link" href="img/resume.pdf" target="_blank"> &gt; View My Resume </a>
           </div>
         </div>
       </div>
 
-      <footer id="footer" class="our-blue">
+
+      <footer id="footer" class="our-grey">
         <!-- top half of footer: contains company contact info and page links -->
 
         <div class="container footer-top">
@@ -164,43 +255,73 @@
             </a>
 
 
-            <a href="mailto:yca207@sfu.ca" class="contact email">
-                <i class="material-icons md-light social-icon">&#xE0E1;</i>
-                <span class="footer-label">yca207@sfu.ca</span>
+            <a href="mailto:nancy_chen107@hotmail.com" class="contact email">
+                <i class="material-icons mail_outline social-icon">&#xE0E1;</i>
+                <span class="footer-label">nancy_chen107@hotmail.com</span>
             </a>
             <a class="contact" href="https://www.linkedin.com/in/nancy-chen-b20206133/">
-              <img class="footer-icon social-icon" src="img/icons/wht-filled-linkedin.png" alt="">
+              <img class="footer-icon social-icon" src="img/icons/blk-filled-linkedin.png" alt="">
               <span class="footer-label">linkedin.com/nancy-chen</span>
             </a>
           </div>
-
+          <div class="footer-listings-section">
           <div class="footer-listing">
             <ul>
               <li><a class="footer-link" href="index.html#about">About</a></li>
               <li><a class="footer-link" href="index.html#projects">Projects</a></li>
               <li><a class="footer-link" href="img/resume.pdf" target="_blank">Resume</a></li>
+              <li><a class="footer-link" href="index.html#illustrations">Illustrations</a></li>
             </ul>
           </div>
 
           <div class="footer-listing">
             <ul>
-              <li><a class="footer-link" href="amorphous.html">Amorphous</a></li>
-              <li><a class="footer-link" href="beep.html">Beep</a></li>
-              <li><a class="footer-link" href="illustrations.html">Drawings</a></li>
+              <li class="footer-link-section-title">Graphic Design</li>
+              <li><a class="footer-link" href="brg.html">Bill Reid Gallery</a></li>
+              <li><a class="footer-link" href="eyexpo.html">Eyexpo</a></li>
+              <li><a class="footer-link" href="surreybanners.html">Surrey Banners</a></li>
             </ul>
           </div>
 
           <div class="footer-listing">
+            <ul>
+              <li class="footer-link-section-title">UI/UX</li>
+              <li><a class="footer-link" href="lunular.html">Lunular</a></li>
+              <li><a class="footer-link" href="m2m.html">Music to Movement</a></li>
+              <li><a class="footer-link" href="evidentpoint.html">Evident Point</a></li>
+            </ul>
+          </div>
+          <div class="footer-listing">
+            <ul>
+              <li class="footer-link-section-title">Story</li>
+              <li><a class="footer-link" href="beep2.html">Beep</a></li>
+              <li><a class="footer-link" href="amorphous.html">Amorphous</a></li>
+            </ul>
+          </div>
+          <div class="footer-listing">
+            <ul>
+              <li class="footer-link-section-title">Other</li>
+              <li><a class="footer-link" href="https://ynchen.wixsite.com/portfolio">Older Wix Porfolio</a></li>
+              <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
+
+            </ul>
+          </div>
+        </div>
+
+          <!-- <div class="footer-listing">
             <ul>
               <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
               <li><a class="footer-link" href="citations.html">Citation</a></li>
               <li><a class="footer-link" href="https://github.com/pomatoman/myPortfolio">Git Repo</a></li>
             </ul>
-          </div>
+          </div> -->
           <!-- go back up -->
           <a class="top-link" href="index.html#top">
             <div> ^ </div>
           </a>
+        </div>
+
+        <div class="container footer-bottom copyright"> ©2019 Ying Nancy Chen. All rights reserved
         </div>
 
       </footer>
@@ -223,9 +344,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       Typed.new('.typed', {
-        strings: ["Moomins.", "Dragon Age.", "learning about history.", "tomatoes and potatoes.", "curry, unagi-don, and spaghetti .", "Harry Potter.", "collecting art books.", "Juuni Kokki.", "to eat dessert first.", "Calvin and Hobbes.",
-          "salmon pink.", "Journey and Monument Valley.",
-          "playing the board game Shadow Hunters.", "to hoard pens and markers.", "Ghibli films.", "Monsters Inc.", "Rune Factory", "...", "to make short comics.", "Animal Crossing.", "designing games,", "watching animation.", "web and visual design,", "UI/ UX.", "to draw.",
+        strings: ["I'm a graphic designer, illustrator, and user experience designer. "," I like learning about history and collecting art books.", "I like playing video games and designing games with my friends.", "I like to draw!","I have worked at Bill Reid Art Gallery, Evident Point, and Eyexpo.","Currently watching JJBA and Merlin."
         ],
         typeSpeed: 20,
         loop: true,
@@ -239,19 +358,20 @@
   </script>
   <script src="js/indexNav.js"></script>
   <script src="js/indexAnim.js"></script>
+  <!-- <script src="js/menu.js"></script> -->
 
-  <!-- <script src="js/jquery.scrollify.js"></script>
-  <script>
-				$(function() {
-					$.scrollify({
-						section : ".section",
-            scrollSpeed: 1100,
-            scrollbars: true,
-            setHeights:false,
-            touchScroll:false,
-					});
-				}); -->
-  <!-- </script> -->
+  <!-- lightgallery scripts -->
+    <script src="js/lightgallery/lightgallery.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="js/lightgallery/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+
+    <script>
+    lightGallery(document.getElementById('aniimated-thumbnials'), {
+        thumbnail:true
+    });
+    </script>
 
 </body>
 

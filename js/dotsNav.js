@@ -1,3 +1,5 @@
+//for side dots navigation on the side
+
 $(document).ready(function($){
           var parPosition = [];
         $('.section').each(function() {
